@@ -1,7 +1,46 @@
 # carbon-literature-bo-replay-skill
 
-A Codex-native multi-agent skill for offline Bayesian optimization replay on literature-derived carbon materials datasets.
+A Codex-friendly skill for **offline Bayesian optimization replay** on literature-derived carbon materials datasets.
 
-This project evaluates whether a BO-style acquisition strategy can identify high-performing literature samples more efficiently than random search, without overclaiming real closed-loop discovery.
+It evaluates whether a BO-style acquisition policy can locate already-reported high-performing samples faster than random search, exploit-only selection, diversity sampling, and an oracle upper bound. It does **not** claim autonomous discovery of new materials.
 
-See `README.md` for the Chinese full introduction.
+## Install
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+pytest -q
+```
+
+## Demo
+
+```bash
+python examples/run_demo.py
+```
+
+or:
+
+```bash
+python -m carbon_literature_bo_replay.cli replay \
+  --data examples/input/carbon_literature_demo.csv \
+  --target ICE \
+  --id-col sample_id \
+  --paper-col paper_id \
+  --out outputs/demo_replay \
+  --direction maximize
+```
+
+## Outputs
+
+- `bo_replay_report.md`
+- `replay_trace.csv`
+- `baseline_comparison.csv`
+- `recommended_candidates.csv`
+- `leakage_audit.csv`
+- `selected_features.csv`
+- JSON-first state files under `state/`
+- `figures/bo_replay_curve.png`
+
+## Boundary statement
+
+The offline replay may support candidate prioritization before a real experimental loop. It should not be described as discovery of a new material unless new experimental validation has been performed.

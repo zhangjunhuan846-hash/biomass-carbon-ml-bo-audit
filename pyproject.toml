@@ -1,15 +1,28 @@
 [project]
 name = "carbon-literature-bo-replay"
-version = "1.0.0"
+version = "1.1.0"
 description = "Offline Bayesian optimization replay for literature-derived carbon materials datasets."
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [{name = "materials review audit workflow"}]
-dependencies = ["numpy>=1.24", "pandas>=2.0", "matplotlib>=3.7", "pyyaml>=6.0", "openpyxl>=3.1"]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+  "openpyxl>=3.1",
+]
 
 [project.scripts]
 carbon-bo-replay = "carbon_literature_bo_replay.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

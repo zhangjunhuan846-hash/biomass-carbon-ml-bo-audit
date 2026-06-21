@@ -1,14 +1,19 @@
+# Python
 __pycache__/
-*.pyc
-.ipynb_checkpoints/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .venv/
 venv/
-.env
-outputs/*
-!outputs/README.md
-data/raw/*
-!data/raw/.gitkeep
-data/curated/*
-!data/curated/.gitkeep
-data/modeling_ready/*
-!data/modeling_ready/.gitkeep
+
+# Generated replay outputs
+outputs/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

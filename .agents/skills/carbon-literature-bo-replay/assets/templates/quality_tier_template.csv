@@ -1,5 +1,0 @@
-quality_tier,definition,allowed_use
-Tier0,Source PDF/table/SI manually verified and units confirmed,Primary analysis
-Tier1,Source location known but one minor ambiguity remains,Exploratory analysis with caveat
-Tier2,AI-extracted or inherited value not yet manually verified,Curation queue and sensitivity analysis
-Tier3,Suspicious value or likely unit/protocol/sample mismatch,Exclude from main analysis unless resolved

@@ -1,2 +1,0 @@
-[console_scripts]
-carbon-bo-replay = carbon_literature_bo_replay.cli:main
