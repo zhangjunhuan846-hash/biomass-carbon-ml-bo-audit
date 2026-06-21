@@ -1,0 +1,13 @@
+leakage_target_patterns:
+  - target
+  - ICE
+  - capacity
+  - capacitance
+  - retention
+  - performance
+  - best
+  - rank
+same_paper_warning: true
+duplicate_similarity_threshold: 0.999
+small_dataset_threshold: 30
+high_missingness_threshold: 0.5

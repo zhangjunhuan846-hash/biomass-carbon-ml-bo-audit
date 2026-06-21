@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AcquisitionTrace",
+  "type": "object",
+  "required": ["rounds", "final_best"],
+  "properties": {
+    "rounds": {"type": "array", "items": {"type": "object"}},
+    "final_best": {"type": "number"}
+  }
+}

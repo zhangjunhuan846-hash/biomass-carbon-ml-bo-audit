@@ -1,0 +1,9 @@
+seed_size: 8
+iterations: 20
+random_repeats: 50
+acquisition: ucb
+ucb_beta: 0.5
+maximize: true
+group_by_paper: true
+minimum_samples_warning: 30
+minimum_features_warning: 3

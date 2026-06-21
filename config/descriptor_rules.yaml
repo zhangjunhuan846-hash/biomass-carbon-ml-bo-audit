@@ -1,0 +1,36 @@
+protected_columns:
+  - target
+  - ICE
+  - capacity
+  - capacitance
+  - retention
+  - sample_id
+  - paper_id
+  - DOI
+  - source
+  - note
+recommended_descriptors:
+  - carbonization_temperature
+  - activation_temperature
+  - BET
+  - pore_volume
+  - micropore_volume
+  - d002
+  - ID_IG
+  - XPS_N
+  - XPS_O
+  - mass_loading
+  - electrode_thickness
+  - compacted_density
+  - current_density
+  - voltage_window
+field_aliases:
+  BET: [BET, BET_surface_area, surface_area, SBET, SSA]
+  d002: [d002, d_002, interlayer_spacing]
+  ID_IG: [ID/IG, ID_IG, Raman_ID_IG, IdIg]
+  XPS_N: [N, N_at%, XPS_N, nitrogen_content]
+  XPS_O: [O, O_at%, XPS_O, oxygen_content]
+  pore_volume: [pore_volume, total_pore_volume, V_total]
+  ICE: [ICE, initial_coulombic_efficiency, first_cycle_CE]
+  capacity: [capacity, reversible_capacity, specific_capacity]
+  capacitance: [capacitance, specific_capacitance, Csp]

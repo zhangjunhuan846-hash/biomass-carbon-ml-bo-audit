@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DatasetProfile",
+  "type": "object",
+  "required": ["n_rows", "columns", "target", "numeric_features"],
+  "properties": {
+    "n_rows": {"type": "integer"},
+    "columns": {"type": "array", "items": {"type": "string"}},
+    "target": {"type": "string"},
+    "numeric_features": {"type": "array", "items": {"type": "string"}},
+    "warnings": {"type": "array", "items": {"type": "string"}}
+  }
+}

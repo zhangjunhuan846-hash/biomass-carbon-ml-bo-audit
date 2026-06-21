@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReplayProtocol",
+  "type": "object",
+  "required": ["seed_size", "iterations", "random_repeats", "acquisition"],
+  "properties": {
+    "seed_size": {"type": "integer", "minimum": 2},
+    "iterations": {"type": "integer", "minimum": 1},
+    "random_repeats": {"type": "integer", "minimum": 1},
+    "acquisition": {"type": "string"},
+    "ucb_beta": {"type": "number"}
+  }
+}

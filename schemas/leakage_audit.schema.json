@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LeakageAudit",
+  "type": "object",
+  "required": ["issues", "risk_level"],
+  "properties": {
+    "issues": {"type": "array", "items": {"type": "object"}},
+    "risk_level": {"type": "string", "enum": ["LOW", "MEDIUM", "HIGH"]}
+  }
+}
