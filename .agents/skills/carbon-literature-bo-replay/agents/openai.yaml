@@ -1,0 +1,7 @@
+interface:
+  display_name: "Carbon Literature BO Replay"
+  short_description: "Audit literature-derived carbon-electrode datasets and run leakage-aware offline BO replay."
+  brand_color: "#475569"
+  default_prompt: "Use the carbon-literature-bo-replay skill to audit my dataset and run an offline BO replay."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+outputs/*
+!outputs/README.md
+data/raw/*
+!data/raw/.gitkeep
+data/curated/*
+!data/curated/.gitkeep
+data/modeling_ready/*
+!data/modeling_ready/.gitkeep

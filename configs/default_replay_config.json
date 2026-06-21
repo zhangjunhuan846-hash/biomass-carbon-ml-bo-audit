@@ -1,0 +1,19 @@
+{
+  "target": "ice_percent",
+  "n_init": 8,
+  "budget": 20,
+  "seeds": 30,
+  "beta": 1.0,
+  "exclude_quality_tiers": [],
+  "feature_columns": [
+    "carbonization_temperature_c",
+    "bet_m2_g",
+    "total_pore_volume_cm3_g",
+    "d002_nm",
+    "id_ig",
+    "n_at_percent",
+    "o_at_percent",
+    "current_density_mag",
+    "mass_loading_mg_cm2"
+  ]
+}
